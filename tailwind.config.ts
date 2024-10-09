@@ -11,10 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)"],
-        mono: ["var(--font-geist-mono)"],
+        sans: ["var(--font-body)"],
+        title: ["var(--font-title)"],
+        accent: "var(--font-accent)",
       },
     },
   },
