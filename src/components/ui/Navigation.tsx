@@ -31,15 +31,21 @@ export default function Navigation() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 my-8">
                 <section className="flex justify-between items-center border-y py-5">
                     <Link href="/">
-                        <Image src={LogoWhite} alt="logo image" priority width={206} height={45} />
+                        <Image
+                            src={LogoWhite}
+                            alt="logo image"
+                            className="w-32 h-auto lg:w-52"
+                            priority
+                        />
                     </Link>
 
-                    <nav className="hidden md:flex items-center gap-10">
+
+                    <nav className="hidden md:flex items-center gap-5 lg:gap-10">
                         <ul className="list-unstyled p-0 flex items-center gap-2">
                             {navLinks.map((link, index) => (
                                 <li key={index}>
                                     <Link href={link.link}
-                                          className="py-2 px-5 border-r transit hover:text-primary capitalize">
+                                          className="py-2 px-3 xl:px-5 border-r transit hover:text-primary capitalize">
                                         {link.title}
                                     </Link>
                                 </li>
